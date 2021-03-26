@@ -24,6 +24,10 @@ body {
   align-items: center;
   padding-left: 1rem;
   padding-right: 1rem;
+  position: fixed;
+  background-color: white;
+  top: 0;
+  left: 0;
 }
 .blogPage__Wrapper .navbar__Container .logo {
   font-size: 14px;
@@ -80,7 +84,7 @@ body {
 .content {
   width: 900px;
   height: 100%;
-  padding: 85px 96px 240px 85px;
+  padding: 150px 96px 240px 85px;
   color: #37352f;
 }
 .content .mainHead {
@@ -145,7 +149,7 @@ body {
   color: #37352f;
 }
 .underlined {
-  border-bottom: 2px solid #e4e3e2;
+  border-bottom: 1px solid #e4e3e2;
 }
 .emptySpace {
   width: 100%;
@@ -181,18 +185,31 @@ body {
 .mainSection__Wrapper .content li a:hover {
   opacity: 1;
 }
+.accordianList {
+}
 .noBullets {
   /* display: flex; */
   list-style-type: none !important;
   margin: 0 !important;
 }
-.noBullets .accordion {
+.noBullets .accordionContainter {
   display: flex;
   align-items: center;
 }
-.noBullets .accordion p {
+.noBullets .accordionContainter p {
   margin-left: 0.5rem;
 }
+.noBullets .accordionContainter .svgContainer {
+  border-radius: 2px;
+  padding: 4px;
+  cursor: pointer;
+  align-self: flex-start;
+  margin-top: 0.25rem;
+}
+.noBullets .accordionContainter .svgContainer:hover {
+  background-color: #efefef;
+}
+
 .noBullets .panel {
   display: none;
   transition: all 0.1s ease;
