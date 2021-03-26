@@ -31,7 +31,7 @@ body {
 }
 .blogPage__Wrapper .navbar__Container .logo {
   font-size: 14px;
-  width: 152px;
+  width: auto;
   text-align: center;
   font-family: -apple-system, "Segoe UI", Helvetica, "Apple Color Emoji", Arial,
     sans-serif, "Segoe UI Emoji", "Segoe UI Symbol";
@@ -221,3 +221,62 @@ body {
 .active {
   transform: rotate(20deg);
 }
+.mobileMenuIcon {
+  display: none;
+}
+@media only screen and (max-width: 480px) {
+  .mainSection__Wrapper {
+    width: 100% !important;
+    /* height: 100%; */
+  }
+  .content {
+    width: 100% !important;
+    padding: 80px 15px 240px 15px;
+    color: #312f28;
+  }
+  .navbar__Container {
+    width: 100%;
+    padding-left: 0.25rem !important;
+    padding-right: 0.25rem !important;
+  }
+  .navbar__Container .logo {
+    width: 50% !important;
+    text-align: left !important;
+  }
+  .navbar__Container .navItems__Container {
+    width: 50% !important;
+    justify-content: flex-end;
+    padding: 0 !important;
+  }
+  .navbar__Container .navItems__Container .navItem:nth-child(2),
+  .navbar__Container .navItems__Container .navItem:nth-child(4) {
+    display: none;
+  }
+  .navbar__Container .navItems__Container .navItem:nth-child(1) span {
+    display: none;
+  }
+  .navbar__Container .navItems__Container .navItem:nth-child(1) {
+    justify-self: flex-end;
+  }
+  .seperator {
+    display: none;
+  }
+  .mobileMenuIcon {
+    width: 2rem;
+    height: 1rem;
+    display: block;
+  }
+  .mobileMenuIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+/* @media only screen and (max-width: 380px) {
+  .logo {
+    width: 15rem !important;
+  }
+  .navbar__Container .navItems__Container {
+    width: 30% !important;
+  }
+} */
