@@ -823,10 +823,14 @@
                 document.body.style.overflow = "hidden";
             }, 100)
             document.querySelector(".screenWrapper").addEventListener("click", function () {
+                document.querySelector(".mobileMenu").style.transition = "all 0.3s ease";
+                document.querySelector(".screenWrapper").style.transition = "all 0.3s ease";
                 document.querySelector(".mobileMenu").style.bottom = "-100px";
-                document.querySelector(".screenWrapper").style.display = "none";
                 document.querySelector(".screenWrapper").style.opacity = "0";
-                document.body.style.overflow = "auto";
+                window.setTimeout(function () {
+                    document.querySelector(".screenWrapper").style.display = "none";
+                    document.body.style.overflow = "auto";
+                }, 100)
             });
         })
     </script>

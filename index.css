@@ -27,14 +27,15 @@ li {
   padding-right: 2rem;
 }
 .navbar__Container .logo {
-  width: auto;
+  width: 50%;
   height: 4rem;
   display: flex;
   align-items: center;
 }
 .navbar__Container .logo .imgContainer {
-  width: 2.5rem;
-  height: 2.5rem;
+  width: 12rem;
+  height: 6rem;
+  margin-left: -4rem;
 }
 .navbar__Container .logo .imgContainer img {
   width: 100%;
@@ -48,7 +49,12 @@ li {
   font-weight: 600;
   color: black;
 }
-
+.homePage__Wrapper .navbar__Container .navItems__Container {
+  width: 50%;
+  margin-left: auto;
+  display: flex;
+  justify-content: flex-end;
+}
 .navbar__Container li {
   font-size: 18px;
   font-weight: 400;
@@ -188,12 +194,80 @@ li {
   text-align: center;
   font-size: 14px;
 }
+.mobileMenuIcon {
+  display: none;
+}
+.mobileMenu {
+  display: none;
+}
+.screenWrapper {
+  width: 100%;
+  height: 100%;
+  display: none;
+}
 @media only screen and (max-device-width: 480px) {
+  .navItem {
+    display: none;
+  }
   .navbar__Container {
     padding-left: 1rem;
     padding-right: 1rem;
   }
   .heroSection__Wrapper .hero {
     padding: 0px 1rem;
+  }
+  .mobileMenuIcon {
+    width: 3rem;
+    height: 1.5rem;
+    display: block;
+  }
+  .mobileMenuIcon img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .mobileMenu {
+    display: block;
+    width: 100%;
+    height: auto;
+    background-color: white;
+    position: fixed;
+    bottom: -100px;
+    left: 0;
+    transition: all 0.3s ease;
+  }
+  .mobileMenu .menuItems {
+    height: 100%;
+    width: 100%;
+  }
+  .mobileMenu .menuItems .mobile_menuItem {
+    height: 2.75rem;
+    border-bottom: 1px solid #e4e3e2;
+    display: flex;
+    align-items: center;
+    padding-left: 0.75rem;
+  }
+  .mobileMenu .menuItems .mobile_menuItem .iconContainer {
+    width: 1.5rem;
+    height: 1.5rem;
+  }
+  .mobileMenu .menuItems .mobile_menuItem .iconContainer img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+  .mobileMenu .menuItems .mobile_menuItem a {
+    text-decoration: none;
+    color: #37352f;
+    padding-left: 0.25rem;
+  }
+  .screenWrapper {
+    display: none;
+    background-color: black;
+    position: fixed;
+    opacity: 0.6;
+    top: 0;
+    left: 0;
+    transition: all 0.3s ease;
   }
 }

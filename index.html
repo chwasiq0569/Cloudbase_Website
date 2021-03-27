@@ -18,13 +18,36 @@
         <div class="navbar__Container">
             <div class="logo">
                 <div class="imgContainer">
-                    <img src="./assets/images/logoWave.png" alt="brand_logo" />
+                    <img src="./assets/images/fam.png" alt="brand_logo" />
                 </div>
-                <span>Clubhouse</span>
+                <!-- <span>Clubhouse</span> -->
             </div>
             <ul class="navItems__Container">
                 <li class="navItem">
                     Sign In
+                </li>
+                <li id="mobileMenuBtn" class="navItem mobileMenuIcon">
+                    <img src="../assets/images/menuIcon.png" alt="menu Icon" />
+                </li>
+            </ul>
+        </div>
+        <div class="screenWrapper">
+
+        </div>
+        <div class="mobileMenu">
+            <ul class="menuItems">
+                <li class="mobile_menuItem">
+                    <div class="iconContainer">
+                        <img src="../assets/images/login.png" alt="loginIcon" />
+                    </div>
+                    <a href="#">
+                        Sign in
+                    </a>
+                </li>
+                <li class="mobile_menuItem">
+                    <a href="#">
+                        Get early access
+                    </a>
                 </li>
             </ul>
         </div>
@@ -35,7 +58,7 @@
                         <img src="./assets/images/logoWave.png" alt="wave_emoji" />
                     </div>
 
-                    <h2>Clubhouse</h2>
+                    <!-- <h2>Clubhouse</h2> -->
                 </div>
 
                 <h4 class="primaryText">Hey, we're still opening up but anyone can join with an invite from an existing
@@ -67,6 +90,28 @@
         </div>
     </div>
     </div>
+
+    <script>
+        document.getElementById("mobileMenuBtn").addEventListener("click", function () {
+            document.querySelector(".mobileMenu").style.bottom = "0%";
+            document.querySelector(".screenWrapper").style.display = "block";
+            window.setTimeout(function () {
+                document.querySelector(".screenWrapper").style.opacity = "0.6";
+                document.body.style.overflow = "hidden";
+            }, 100)
+            document.querySelector(".screenWrapper").addEventListener("click", function () {
+                document.querySelector(".mobileMenu").style.transition = "all 0.3s ease";
+                document.querySelector(".screenWrapper").style.transition = "all 0.3s ease";
+                document.querySelector(".mobileMenu").style.bottom = "-100px";
+                document.querySelector(".screenWrapper").style.opacity = "0";
+                window.setTimeout(function () {
+                    document.querySelector(".screenWrapper").style.display = "none";
+                    document.body.style.overflow = "auto";
+                }, 100)
+            });
+        })
+    </script>
+
 </body>
 
 </html>
