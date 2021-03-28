@@ -23,14 +23,18 @@
                 <!-- <span>Clubhouse</span> -->
             </div>
             <ul class="navItems__Container">
-                <li class="navItem">
+                <!-- <li class="navItem">
                     Sign In
                 </li>
                 <li class="navItem">
                     Get early access
-                </li>
-                <li id="mobileMenuBtn" class="navItem mobileMenuIcon">
-                    <img src="../assets/images/menuIcon.png" alt="menu Icon" />
+                </li> -->
+                <li id="mobileMenuBtn" class="mobileMenuIcon">
+                    <div class="imgContainer">
+                        <img src="../assets/images/two-lines.png" alt="menu Icon" />
+                    </div>
+
+                    <p>MENU</p>
                 </li>
             </ul>
         </div>
@@ -57,13 +61,18 @@
         <div class="heroSection__Wrapper">
             <div class="hero">
                 <div class="upper">
-                    <!-- <p class="secondaryHead">RESERVE YOUR CARD</p> -->
-                    <div class="mainWavingHand">
+                    <p class="secondaryHead">We’re currently in private beta
+                    </p>
+                    <!-- <div class="mainWavingHand">
                         <img src="../assets/images/logoWave.png" alt="wave_emoji" />
-                    </div>
+                    </div> -->
                     <div class="mainHead">
-                        <span>Invest in your future</span>
-                        <span>while your cash stays safe</span></div>
+                        <span>Put your money to work
+
+                        </span>
+                        <span>without all the work
+
+                        </span></div>
                 </div>
                 <div class="lower">
                     <div class="lower_leftSide">
@@ -76,35 +85,37 @@
                             <div class="imgContainer">
                                 <img src="../assets/images/tick.svg" alt="checked" />
                             </div>
-                            <p>Spend $1, get $1 invested on your behalf</p>
+                            <p>Get a portfolio recommended for your risk level and timeline
+                            </p>
                         </li>
                         <li class="heroListItem">
                             <div class="imgContainer">
                                 <img src="../assets/images/tick.svg" alt="checked" />
                             </div>
-                            <p>No cap on spending or earning</p>
+                            <p>Remove the guesswork of figuring out what to invest in</p>
                         </li>
                         <li class="heroListItem">
                             <div class="imgContainer">
                                 <img src="../assets/images/tick.svg" alt="checked" />
                             </div>
-                            <p>Match on spending</p>
+                            <p>Invest confidently with managed portfolios that we've built for you</p>
                         </li>
                         <li class="heroListItem">
                             <div class="imgContainer">
                                 <img src="../assets/images/tick.svg" alt="checked" />
                             </div>
-                            <p>FDIC-insured checking account</p>
+                            <p>Sit back knowing your investments are at work</p>
                         </li>
                         <li class="heroListItem">
                             <div class="imgContainer">
                                 <img src="../assets/images/tick.svg" alt="checked" />
                             </div>
-                            <p>2.98%** average returns
+                            <p>All at a cost that may surprise you.
+
                             </p>
                         </li>
                         <button class="hero_CTABtn">
-                            Get early access
+                            <p>GET EARLY ACCESS</p>
                         </button>
                     </div>
                 </div>
@@ -217,6 +228,7 @@
         document.getElementById("mobileMenuBtn").addEventListener("click", function () {
             document.querySelector(".mobileMenu").style.bottom = "0%";
             document.querySelector(".screenWrapper").style.display = "block";
+
             window.setTimeout(function () {
                 document.querySelector(".screenWrapper").style.opacity = "0.6";
                 document.body.style.overflow = "hidden";
