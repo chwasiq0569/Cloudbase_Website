@@ -94,6 +94,7 @@ li {
   align-items: center;
   justify-content: space-between;
   text-align: center;
+  margin-top: 8rem;
 }
 .heroSection__Wrapper .hero .upper {
   display: flex;
@@ -206,6 +207,7 @@ li {
   padding-right: 3rem;
   padding-bottom: 4rem;
   background-color: #ffffff;
+  margin-top: 8rem;
 }
 .faqContainer .seeallFaqsContainer {
   width: 100%;
@@ -284,6 +286,7 @@ li {
   height: 6rem;
   display: flex;
   justify-content: center;
+  margin-top: 8rem;
 }
 .footer .footerContent__Container {
   width: 22rem;
@@ -323,17 +326,85 @@ li {
   height: 100%;
   display: none;
 }
+
+@media only screen and (max-width: 600px) {
+  .heroSection__Wrapper {
+    width: 100%;
+    height: auto;
+  }
+  .heroSection__Wrapper .hero {
+    width: 100%;
+    margin-top: 3rem;
+  }
+  .navbar__Container {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+  }
+  .heroSection__Wrapper .hero .upper,
+  .heroSection__Wrapper .hero .lower {
+    width: 100%;
+    flex-direction: column;
+    align-items: center;
+  }
+  .heroSection__Wrapper .hero .lower {
+    flex-direction: column-reverse;
+  }
+  .heroSection__Wrapper .hero .lower .lower_leftSide {
+    align-items: center !important;
+    justify-content: center !important;
+    width: 80%;
+    padding-top: 3rem;
+  }
+  .heroSection__Wrapper .hero .lower .lower_rightSide {
+    width: 100%;
+  }
+  .heroSection__Wrapper .hero .lower .lower_rightSide .hero_CTABtn {
+    align-self: center;
+    margin-top: 1.5rem;
+  }
+  .heroSection__Wrapper .hero .upper .mainHead {
+    width: 100%;
+    padding: 0px 1rem;
+  }
+  .heroSection__Wrapper .hero .upper .mainHead span {
+    width: 100%;
+    font-size: 1.75rem;
+  }
+  .heroSection__Wrapper .hero .lower .lower_rightSide .heroListItem {
+    margin-left: 0.5rem;
+  }
+  .heroSection__Wrapper .hero .lower .lower_rightSide .hero_CTABtn {
+    margin-top: 1.5rem;
+    margin-left: 0;
+  }
+  .faqContainer {
+    margin-top: 0rem;
+    padding-left: 1rem;
+    padding-right: 1rem;
+  }
+  .faqContainer .questionContainer h1 {
+    font-size: 1.75rem;
+    margin-bottom: -3rem;
+  }
+  .faqContainer .accordion {
+    padding-bottom: 0.75rem;
+    padding-top: 0.75rem;
+  }
+  .faqContainer .accordion p {
+    font-size: 1rem;
+    width: 85%;
+  }
+  .faqContainer .panel p {
+    font-size: 0.9rem;
+    padding-bottom: 0.25rem;
+  }
+}
+
 @media only screen and (max-device-width: 480px) {
   .navItem {
     display: none;
   }
-  .navbar__Container {
-    padding-left: 1rem;
-    padding-right: 1rem;
-  }
-  .heroSection__Wrapper .hero {
-    padding: 0px 1rem;
-  }
+
   .mobileMenuIcon {
     width: 3rem;
     height: 1.5rem;
