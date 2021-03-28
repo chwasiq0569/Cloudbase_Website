@@ -249,7 +249,7 @@ li {
   width: 10rem;
   height: 3.125rem;
   align-self: flex-start;
-  margin-left: 1.75rem;
+  margin-left: 2rem;
   font-size: 0.85rem;
   margin-top: 2rem;
   background-color: #2d3a3a;
@@ -262,6 +262,7 @@ li {
   display: flex;
   justify-content: center;
   align-items: center;
+  margin-bottom: 4rem;
 }
 .hero_CTABtn:hover {
   background-color: transparent;
