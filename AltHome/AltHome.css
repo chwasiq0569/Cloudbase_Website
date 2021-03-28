@@ -209,21 +209,6 @@ li {
   background-color: #ffffff;
   margin-top: 8rem;
 }
-.faqContainer .seeallFaqsContainer {
-  width: 100%;
-  text-align: center;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin-top: 4rem;
-  font-family: AktivGroteskCorp;
-  color: #0f9a8e;
-  text-decoration: underline;
-}
-.faqContainer .seeallFaqsContainer p {
-  font-weight: 500;
-  cursor: pointer;
-}
 
 .questionContainer {
   display: flex;
@@ -235,11 +220,13 @@ li {
   font-family: FoundersGroteskMedium;
 }
 .questionContainer h1 {
+  font-size: 3rem;
   font-family: FoundersGroteskMedium;
+  color: #2d3a3a;
 }
 
 .accordion {
-  color: #444;
+  color: #2d3a3a;
   cursor: pointer;
   width: 100%;
   text-align: left;
@@ -255,6 +242,7 @@ li {
 .accordion p {
   font-size: 20px;
   font-family: FoundersGroteskMedium;
+  color: #2d3a3a;
 }
 .accordion .iconContainer {
   width: 1rem;
@@ -276,10 +264,17 @@ li {
 .panel {
   max-height: 0;
   overflow: hidden;
-  transition: max-height 0.15s ease-in-out;
+  transition: max-height 0.2s ease-in-out;
   font-family: FoundersGroteskReguler;
   font-size: 18px;
   border-bottom: 1px solid rgb(163, 166, 168, 0.45);
+  color: #2d3a3a;
+}
+.panel p {
+  color: #2d3a3a;
+  padding-left: 0.75rem;
+  color: #697371;
+  line-height: 1.5;
 }
 .footer {
   width: 100%;
@@ -397,6 +392,9 @@ li {
   .faqContainer .panel p {
     font-size: 0.9rem;
     padding-bottom: 0.25rem;
+  }
+  .footer {
+    margin-top: 2rem;
   }
 }
 
